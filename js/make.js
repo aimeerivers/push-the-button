@@ -10,7 +10,6 @@ button.addEventListener("click", () => {
     settings.label = labelText;
     var settingsString = JSON.stringify(settings);
     var settingsEncoded = btoa(settingsString);
-    console.log(settingsEncoded);
     document.location = "../?s=" + settingsEncoded;
   } 
 });

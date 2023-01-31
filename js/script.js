@@ -8,7 +8,6 @@ const settingsParam = params.get("s");
 if(settingsParam) {
   try {
     const settings = JSON.parse(atob(settingsParam));
-    console.log(settings);
     if(settings.label) {
       label.textContent = settings.label;
     }
