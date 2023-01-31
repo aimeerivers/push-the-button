@@ -2,8 +2,21 @@ const audio = new Audio("https://www.aimeerivers.com/push-the-button/audio/butto
 const button = document.getElementById("button");
 const label = document.getElementById("label");
 
+const params = new URLSearchParams(window.location.search);
+const settingsParam = params.get("s");
+
+if(settingsParam) {
+  try {
+    const settings = JSON.parse(atob(settingsParam));
+    console.log(settings);
+    if(settings.label) {
+      label.textContent = settings.label;
+    }
+  } catch(e) {
+    // something went wrong
+  }
+}
+
 button.addEventListener("click", () => {
   audio.play();
 });
-
-label.textContent="Push me now!";
