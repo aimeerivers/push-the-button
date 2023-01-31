@@ -11,7 +11,6 @@ button.addEventListener("click", () => {
     var settingsString = JSON.stringify(settings);
     var settingsEncoded = btoa(settingsString);
     console.log(settingsEncoded);
-    link.href="../?s=" + settingsEncoded;
-    linkContainer.style.display="block";
+    document.location = "../?s=" + settingsEncoded;
   } 
 });
