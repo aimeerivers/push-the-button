@@ -1,5 +1,3 @@
-const linkContainer$ = document.getElementById("linkContainer");
-const link = document.getElementById("link");
 const label = document.getElementById("label");
 const button = document.getElementById("button");
 
