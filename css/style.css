@@ -2,6 +2,7 @@ html, body {
   height: 100%;
   margin: 0;
   background-color: #FEB;
+  margin: 0 1em;
 }
 
 .parent {
@@ -9,7 +10,6 @@ html, body {
   align-items: center;
   justify-content: center;
   height: 100%;
-  margin: 0 1em;
 }
 
 .button-pushable {
